@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 800px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+}
+
+.inp input{
+    margin: 15px;
+}
+.inp label{
+    margin-left: 30px;
+}
+.inp, .disp{
+    display: inline-block;
+}
+
+.disp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background-color: azure;
+    width: 80%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.inp button{
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+    margin-left: 120px;
+}
+
+.inp button{
+    color: white;
+}
+
+.inp button:hover{
+    color: aqua;
+}
+.inp button:active{
+    color: aquamarine;
+}
+
+</style>
+
+
+<body>
+    
+    <div class="main">
+        <div class="inp"><label for="">Input your birth date!<input id="bday" type="date"></label><button onclick="change()">Fetch age!</button></div>
+        <div class="disp"><h4 id="text"></h4></div>
+    </div>
+
+
+    <script src="logic.js"></script>
+
+</body>
+</html>
